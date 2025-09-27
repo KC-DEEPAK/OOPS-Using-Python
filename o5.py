@@ -16,6 +16,15 @@ class Male:
         print("I can flirt")
     def work(self):
         print("I can Code")
+    def morning(self):
+        print("I want to study at 6:00 AM")
+    def night(self):
+        print("I want to sleep at 11:00 PM")
+class Female:
+    def morning(self):
+        print("I want to study at 5AM")
+    def night(self):
+        print("I want to seep at 10o clock")
 class Boy(Human,Male):
     def __init__(self,name,heart,language):
         Human. __init__(self,heart)
@@ -40,4 +49,5 @@ print(boy_1.num_eyes)
 print(boy_1.language)
 boy_1.display()
 # this is the topic of multiple inheritance which we can inheret the two or more class
-
+boy_1.morning()
+boy_1.night()
